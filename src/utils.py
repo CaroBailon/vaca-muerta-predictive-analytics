@@ -19,7 +19,7 @@ def cargar_datos(nombre_archivo):
     """
     Carga los datos desde la carpeta 'data/'.
     """
-    # Navega una carpeta hacia atrás desde notebooks/ y entra a data/
+    # Al ejecutar desde notebooks/, subimos un nivel (..) y entramos a data/
     ruta = os.path.join("..", "data", nombre_archivo)
     
     if not os.path.exists(ruta):
@@ -29,8 +29,10 @@ def cargar_datos(nombre_archivo):
     print(f"📥 Cargando datos desde '{ruta}'...")
     df = pd.read_csv(ruta)
     
-    # Estandarización y optimización de memoria
+    # Estandarización de columnas
     df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_')
+    
+    # Optimización de memoria
     mem_antes = df.memory_usage(deep=True).sum() / 1024**2
     
     cols_int = df.select_dtypes(include=['int64']).columns
