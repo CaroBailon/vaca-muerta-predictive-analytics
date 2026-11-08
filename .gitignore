@@ -1,18 +1,14 @@
-# Entornos virtuales
-.venv/
-venv/
-env/
+# Salidas del notebook: se regeneran al ejecutarlo, no se versionan.
+data/processed/
 
-# Archivos compilados, cachés y notebooks
+# Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.venv/
+venv/
 
-# Datos generados automáticamente 
-data/processed/
-
-# Archivos de sistema operativo y VS Code
+# Sistema
 .DS_Store
 Thumbs.db
-.vscode/
 desktop.ini
