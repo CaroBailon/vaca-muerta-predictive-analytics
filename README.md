@@ -4,7 +4,7 @@
 
 `Python` · `pandas` · `scikit-learn` · `FastAPI` · `Docker` · Datos abiertos de la Secretaría de Energía
 
-**▶️ [Probar el modelo en vivo](https://entregafinal-data-science.onrender.com/demo)** · [API y documentación](https://entregafinal-data-science.onrender.com/docs) · [Presentación (PDF)](docs/presentacion.pdf) · [Informe técnico completo](docs/informe_tecnico.md)
+**▶️ [Probar el modelo en vivo](https://vaca-muerta-carolina.onrender.com/demo)** · [API y documentación](https://vaca-muerta-carolina.onrender.com/docs) · [Presentación (PDF)](docs/presentacion.pdf) · [Informe técnico completo](docs/informe_tecnico.md)
 
 > El servicio corre en una capa gratuita que se duerme tras 15 minutos sin uso: la primera carga puede tardar hasta un minuto.
 
@@ -80,7 +80,7 @@ K-Means sobre las variables de intensidad, sin año ni producción, encontró cu
 ## La API
 
 ```bash
-curl -X POST https://entregafinal-data-science.onrender.com/predict \
+curl -X POST https://vaca-muerta-carolina.onrender.com/predict \
   -H "Content-Type: application/json" -d @ejemplo_pozo.json
 ```
 
@@ -134,7 +134,7 @@ uvicorn src.app:app --reload     # y abrir http://127.0.0.1:8000/docs
 
 ## Equipo y uso de IA
 
-Proyecto final de **EnergIA Digital 2026**, desarrollado por Carolina Bailon, Franco Malacalza y Martín Gerbaldo.
+Proyecto final de **EnergIA Digital 2026**, desarrollado por **Carolina Bailon**, Franco Malacalza y Martín Gerbaldo.
 
 Usamos un asistente de IA como copiloto para sintaxis de librerías, revisión de código y redacción. Las decisiones de alcance, metodología e interpretación fueron nuestras, y ninguna cifra entra al texto si no sale de una celda ejecutada. El detalle, con los casos donde revisar cambió la conclusión, está en el [informe técnico](docs/informe_tecnico.md#uso-de-herramientas-de-ia).
 

@@ -14,9 +14,9 @@ de este README.
 
 **El modelo está desplegado y se puede probar ahora mismo:**
 
-- **<https://entregafinal-data-science.onrender.com/demo>** — un panel para mover el diseño
+- **<https://vaca-muerta-carolina.onrender.com/demo>** — un panel para mover el diseño
   del pozo con deslizadores y ver cómo responde el modelo.
-- **<https://entregafinal-data-science.onrender.com/docs>** — la API, con su documentación
+- **<https://vaca-muerta-carolina.onrender.com/docs>** — la API, con su documentación
   interactiva.
 
 Corre en una capa gratuita que duerme el servicio tras quince minutos sin uso, así que la
@@ -546,7 +546,7 @@ fuera del ámbito técnico.
 El modelo no se queda en el notebook: se sirve como una API HTTP, de modo que cualquier
 sistema pueda pedirle una estimación para un diseño que todavía no se fracturó.
 
-> 🟢 **Desplegada y en funcionamiento:** **<https://entregafinal-data-science.onrender.com/docs>**
+> 🟢 **Desplegada y en funcionamiento:** **<https://vaca-muerta-carolina.onrender.com/docs>**
 >
 > Es la documentación interactiva: se puede probar el endpoint desde el navegador, sin escribir
 > código. Corre en la capa gratuita de Render, que **duerme el servicio tras quince minutos sin
@@ -579,7 +579,7 @@ FastAPI, donde se puede probar el endpoint sin escribir una línea de código.
 ### Un ejemplo
 
 ```bash
-curl -X POST https://entregafinal-data-science.onrender.com/predict \
+curl -X POST https://vaca-muerta-carolina.onrender.com/predict \
   -H 'Content-Type: application/json' \
   -d @ejemplo_pozo.json
 ```
@@ -674,7 +674,7 @@ mismo resultado que los coeficientes del punto 20.
 
 ### El panel
 
-**[`/demo`](https://entregafinal-data-science.onrender.com/demo)** es una página suelta que
+**[`/demo`](https://vaca-muerta-carolina.onrender.com/demo)** es una página suelta que
 sirve esta misma aplicación: se mueve el diseño con deslizadores y el modelo responde al
 instante. No es una segunda aplicación ni agrega dependencias —`src/demo.html` es un archivo
 que `app.py` devuelve tal cual—, así que hay un solo servicio que desplegar y mantener.
